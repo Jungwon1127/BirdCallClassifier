@@ -35,21 +35,28 @@ First, we got our data from the BirdCLEF competition here: https://www.kaggle.co
 Utilizing the librosa python package, we quite simply directly convert the audio files into their respective melspectrogram representations. 
 
 Here are a few examples:
-![XC659876](https://user-images.githubusercontent.com/66310121/166244222-f659b55c-a1e8-4d08-b7cc-8dd866666189.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166244222-f659b55c-a1e8-4d08-b7cc-8dd866666189.png"
+<p>
 </p>
 <p align = "center">
 Fig.2 - Barn Owl Mel Frequency Spectrogram
 </p>
 
 
-![XC353446](https://user-images.githubusercontent.com/66310121/166244342-4c0c8903-a5af-455a-a6b9-646b9a656902.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166244342-4c0c8903-a5af-455a-a6b9-646b9a656902.png"
+<p>
+
 </p>
 <p align = "center">
 Fig.3 - Common Sandpiper Mel Frequency Spectrogram
 </p>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166244383-d4a30a89-99ce-492a-80af-9ff36625ccfc.png"
+<p>
 
-![XC486560](https://user-images.githubusercontent.com/66310121/166244383-d4a30a89-99ce-492a-80af-9ff36625ccfc.png)
 </p>
 <p align = "center">
 Fig.4 - House Sparrow Mel Frequency Spectrogram
