@@ -7,8 +7,7 @@
 ## Index
 1. [Approach](#approach)
 2. [Preprocessing the data](#preprocessing-the-data)
-3. [Creating the model](#creating-the-model)
-4. [Training and evaulation](#training-and-evaluation)
+3. [Creating, trainingm and evaluating the model](#creating-the-model)
 
 ### Approach
 Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. 
@@ -52,6 +51,8 @@ The logic behind this approach is that a convolutional neural network will be ab
 ### Preprocessing the data
 First, we got our data from the BirdCLEF competition here: https://www.kaggle.com/competitions/birdclef-2022/data. This data gives you a variety of data, from a folder of over 150 different bird calls to csv files that provide general information about bird names, species, scientific name, etc. For this neural network, we will only be utilizing the sound files (.ogg format, but most sound formats should work). 
 
+Using a pandas dataframe, we loaded in all the audio files with their respective descriptions. Then we filtered the dataframe to return to us the 6 birds with the highest number of individual data points we can work with (each class had 500 audio files). 
+
 We took the top 6 birds with the most individual data points (500 each) and it came out to be: 
 1. Barn Owl (brnowl) 
 2. Common Sandpiper (comsan) 
@@ -68,7 +69,7 @@ Here are a few examples:
 <p>
 </p>
 <p align = "center">
-Fig.3 - Barn Owl Mel Frequency Spectrogram
+Fig.4 - Barn Owl Mel Frequency Spectrogram
 </p>
 
 
@@ -78,7 +79,7 @@ Fig.3 - Barn Owl Mel Frequency Spectrogram
 
 </p>
 <p align = "center">
-Fig.4 - Common Sandpiper Mel Frequency Spectrogram
+Fig.5 - Common Sandpiper Mel Frequency Spectrogram
 </p>
 
 <p align="center">
@@ -87,18 +88,37 @@ Fig.4 - Common Sandpiper Mel Frequency Spectrogram
 
 </p>
 <p align = "center">
-Fig.5 - House Sparrow Mel Frequency Spectrogram
+Fig.6 - House Sparrow Mel Frequency Spectrogram
 </p>
-
-
-
-
-
 
 
 ### Creating the model
 
-### Training and evaluation
+Using a 80, 10, 10 split of training, validation, and testing data, we created a convolution neural network using the Keras library. Using this initial model we obtained the following results:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166316819-535114df-3aa5-472c-9fe2-698383096c5f.png"
+<p>
+</p>
+<p align = "center">
+Fig.7 - Novel Convolutional Neural Network
+</p>
+
+Wanting to further increase our accuracy, we decided to use MobileNetV2, a pretrained image classification model provided by Keras. The results are as follows:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166317764-b18c86e2-a379-4be8-b2fe-28790fad7d62.png"
+<p>
+</p>
+<p align = "center">
+Fig.8 - MobileNetV2 Transfered Neural Network
+</p>
+
+Heatmap of MobileNetV2 edition of the CNN:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66310121/166317975-2c6e3fcc-abcc-4c80-8082-149c9dc73450.png"
+<p>
 
 
 Sources: <br>
