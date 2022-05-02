@@ -14,7 +14,7 @@
 Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
 
 What is a mel frequency cepstrum and why is it used? 
-</p align="center">
+<p align="center">
   <img src="https://librosa.org/doc/0.7.2/_images/librosa-feature-melspectrogram-1.png"
 <p>
   
@@ -31,6 +31,31 @@ The logic behind this approach is that a convolutional neural network will be ab
 
 ### Preprocessing the data
 First, we got our data from the BirdCLEF competition here: https://www.kaggle.com/competitions/birdclef-2022/data. This data gives you a variety of data, from a folder of over 150 different bird calls to csv files that provide general information about bird names, species, scientific name, etc. For this neural network, we will only be utilizing the sound files (.ogg format, but most sound formats should work). 
+
+Utilizing the librosa python package, we quite simply directly convert the audio files into their respective melspectrogram representations. 
+
+Here are a few examples:
+![XC659876](https://user-images.githubusercontent.com/66310121/166244222-f659b55c-a1e8-4d08-b7cc-8dd866666189.png)
+</p>
+<p align = "center">
+Fig.2 - Barn Owl Mel Frequency Spectrogram
+</p>
+
+
+![XC353446](https://user-images.githubusercontent.com/66310121/166244342-4c0c8903-a5af-455a-a6b9-646b9a656902.png)
+</p>
+<p align = "center">
+Fig.3 - Common Sandpiper Mel Frequency Spectrogram
+</p>
+
+
+![XC486560](https://user-images.githubusercontent.com/66310121/166244383-d4a30a89-99ce-492a-80af-9ff36625ccfc.png)
+</p>
+<p align = "center">
+Fig.4 - House Sparrow Mel Frequency Spectrogram
+</p>
+
+
 
 
 
