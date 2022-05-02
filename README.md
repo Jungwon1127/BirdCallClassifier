@@ -11,11 +11,19 @@
 4. [Training and evaulation](#training-and-evaluation)
 
 ### Approach
-Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into mel-spectrogram images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
+Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into MFC (Mel Frequency Cepstrum) images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
 
-The logic behind this approach is that a convolutional neural network will be able to pick up on the correlation between the frequency patterns of the bird calls (due to the spectrogram mesuring frequncy of the audio file on the veritcal axis) at as well as the the correlation in time (the x-axis of the spectrogram). 
+What is a mel frequency cepstrum and why is it used? A mel frequency cepstrum is a variant of the spectrogram where a few things change.
+1. The frequencies (y-axis) are converted the mel scale.
+2. The x-axis is in the quefrequency domain
 
-Why a 
+The significance of the mel scale is that it is a logarithmic unit of pitch that is meant to emulate the way humans percieve sound as people, while quite good at diffentiating lower pitch, struggle as the frequency of the pitch increases. Since humans are the ones labeling and listing to the data, it would follow that we would also want the neural network to "learn" the patterns that human listeners noticed.
+
+The quefreuency domain is measured in unit seconds, and it is a a variant of time domain. Although the exact science behind the use of this representation is quite complicated, this format has been used extensively in voice recognition. 
+
+The logic behind this approach is that a convolutional neural network will be able to pick up on the correlation between the frequency patterns of the bird calls (due to the spectrogram mesuring frequncy of the audio file on the veritcal axis) as well as the the correlation in quefrequncy time (the x-axis of the spectrogram). 
+
+
 
 ### Preprocessing the data
 First, we got our data from the BirdCLEF competition here: https://www.kaggle.com/competitions/birdclef-2022/data. This data gives you a variety of data, from a folder of over 150 different bird calls to csv files that provide general information about bird names, species, scientific name, etc. For this neural network, we will only be utilizing the sound files (.ogg format, but most sound formats should work). 
