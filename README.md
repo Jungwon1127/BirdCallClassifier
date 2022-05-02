@@ -16,9 +16,10 @@ Using the approach used by Magdalena Kortas in https://towardsdatascience.com/so
 #### Definitions
 **Convolutional Neural Network**
 
-A convolutional neural network is a class of artificial neural network that is most commonly used for image recognition. 
+A convolutional neural network is a class of artificial neural network that is most commonly used for image recognition. The most significant feature and why it is so powerful for image recognition is it ability to "successfully capture the Spatial and Temporal dependencies" of that images you pass into it (Saha). Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input as opposed to other classes of neural networks.
 
-Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
+Learn more about them here: <br>
+https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
 
 **Spectrogram vs Mel Frequency Spectrogram**
 
@@ -105,4 +106,5 @@ https://ebird.org/home <br>
 https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53 <br>
 https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b <br>
 https://www.kaggle.com/competitions/birdclef-2022/data <br>
-https://pnsn.org/spectrograms/what-is-a-spectrogram
+https://pnsn.org/spectrograms/what-is-a-spectrogram <br>
+https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
