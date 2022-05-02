@@ -11,16 +11,35 @@
 4. [Training and evaulation](#training-and-evaluation)
 
 ### Approach
-Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
+Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. 
 
-What is a mel frequency spectrum and why is it used? 
+#### Definitions
+**Convolutional Neural Network**
+
+A convolutional neural network is a class of artificial neural network that is most commonly used for image recognition. 
+
+Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
+
+**Spectrogram vs Mel Frequency Spectrogram**
+
+This is what a spectrogram looks like:
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Spectrogram-19thC.png"
+<p>
+  </p>
+<p align = "center">
+Fig.1 - Spectrogram
+</p>
+
+The Pacific Northwest Seismic Network explains it like this: "A spectrogram is a visual way of representing the signal strength, or 'loudness', of a signal over time at various frequencies present in a particular waveform.  Not only can one see whether there is more or less energy at, for example, 2 Hz vs 10 Hz, but one can also see how energy levels vary over time." To generate a spectrogram, one of the approaches you can take is to do a fourier transform. In this case, a fourier transform would "decompose" (change) the audio signal into its constituent frequencies (simply put, it shows which pitches are the most significant of loud over a period of time). 
+
 <p align="center">
   <img src="https://librosa.org/doc/0.7.2/_images/librosa-feature-melspectrogram-1.png"
 <p>
   
 </p>
 <p align = "center">
-Fig.1 - Mel Frequency Spectrogram
+Fig.2 - Mel Frequency Spectrogram
 </p>
 
 A mel frequency spectrogram is a variant of the spectrogram where the frequencies (y-axis) are converted the mel scale.
@@ -48,7 +67,7 @@ Here are a few examples:
 <p>
 </p>
 <p align = "center">
-Fig.2 - Barn Owl Mel Frequency Spectrogram
+Fig.3 - Barn Owl Mel Frequency Spectrogram
 </p>
 
 
@@ -58,7 +77,7 @@ Fig.2 - Barn Owl Mel Frequency Spectrogram
 
 </p>
 <p align = "center">
-Fig.3 - Common Sandpiper Mel Frequency Spectrogram
+Fig.4 - Common Sandpiper Mel Frequency Spectrogram
 </p>
 
 <p align="center">
@@ -67,7 +86,7 @@ Fig.3 - Common Sandpiper Mel Frequency Spectrogram
 
 </p>
 <p align = "center">
-Fig.4 - House Sparrow Mel Frequency Spectrogram
+Fig.5 - House Sparrow Mel Frequency Spectrogram
 </p>
 
 
@@ -85,4 +104,5 @@ Sources: <br>
 https://ebird.org/home <br>
 https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53 <br>
 https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b <br>
-https://www.kaggle.com/competitions/birdclef-2022/data
+https://www.kaggle.com/competitions/birdclef-2022/data <br>
+https://pnsn.org/spectrograms/what-is-a-spectrogram
