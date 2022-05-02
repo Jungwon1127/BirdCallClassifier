@@ -18,7 +18,7 @@ If successful, you'll help advance the science of bioacoustics and support ongoi
 ## Index
 1. [Approach](#approach)
 2. [Preprocessing the data](#preprocessing-the-data)
-3. [Creating, trainingm and evaluating the model](#creating-the-model)
+3. [Creating, training and evaluating the model](#creating-training-and-evaluating-the-model)
 
 ### Approach
 Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. 
@@ -103,7 +103,7 @@ Fig.6 - House Sparrow Mel Frequency Spectrogram
 </p>
 
 
-### Creating the model
+### Creating, training, and evaluating the model
 
 Using a 80, 10, 10 split of training, validation, and testing data, we created a convolution neural network using the Keras library. Using this initial model we obtained the following results:
 
