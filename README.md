@@ -81,7 +81,8 @@ Fig.4 - House Sparrow Mel Frequency Spectrogram
 ### Training and evaluation
 
 
-Sources:
-https://ebird.org/home
-https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53
-https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b
+Sources: <br>
+https://ebird.org/home <br>
+https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53 <br>
+https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b <br>
+https://www.kaggle.com/competitions/birdclef-2022/data
