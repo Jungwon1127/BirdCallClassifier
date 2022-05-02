@@ -11,17 +11,21 @@
 4. [Training and evaulation](#training-and-evaluation)
 
 ### Approach
-Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into MFC (Mel Frequency Cepstrum) images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
+Using the approach used by Magdalena Kortas in https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b, we will be building a similar model that converts bird audio files into melfrequency spectrogram images that will then be run through a convolutional neural network to detect bird species. Why a convolutional neural network? Many of the competitors in previous years of BirdCLEF have found that they have found best results using a convolutional neural network classifier that takes a visual representation of bird calls as the input. 
 
-What is a mel frequency cepstrum and why is it used? A mel frequency cepstrum is a variant of the spectrogram where a few things change.
-1. The frequencies (y-axis) are converted the mel scale.
-2. The x-axis is in the quefrequency domain
+What is a mel frequency cepstrum and why is it used? 
+
+![image](https://user-images.githubusercontent.com/66310121/166242033-fb0a98a3-6631-498d-aee2-ca58aa37ee58.png)
+</p>
+<p align = "center">
+Fig.1 - Mel Frequency Spectrogram
+</p>
+
+A mel frequency spectrogram is a variant of the spectrogram where the frequencies (y-axis) are converted the mel scale.
 
 The significance of the mel scale is that it is a logarithmic unit of pitch that is meant to emulate the way humans percieve sound as people, while quite good at diffentiating lower pitch, struggle as the frequency of the pitch increases. Since humans are the ones labeling and listing to the data, it would follow that we would also want the neural network to "learn" the patterns that human listeners noticed.
 
-The quefreuency domain is measured in unit seconds, and it is a a variant of time domain. Although the exact science behind the use of this representation is quite complicated, this format has been used extensively in voice recognition. 
-
-The logic behind this approach is that a convolutional neural network will be able to pick up on the correlation between the frequency patterns of the bird calls (due to the spectrogram mesuring frequncy of the audio file on the veritcal axis) as well as the the correlation in quefrequncy time (the x-axis of the spectrogram). 
+The logic behind this approach is that a convolutional neural network will be able to pick up on the correlation between the frequency patterns of the bird calls (due to the spectrogram mesuring frequncy of the audio file on the veritcal axis) as well as the the correlation in time (the x-axis of the spectrogram). 
 
 
 
