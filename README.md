@@ -73,10 +73,10 @@ The logic behind this approach is that a convolutional neural network will be ab
 
 ### Take a listen to some of our audio samples:
   Sample 1: Barn Owl (brnowl) <br>
-  https://user-images.githubusercontent.com/79030095/166406937-db2a3e14-96c5-411f-b8c4-0576734cdec9.mp4
+  [Barn Owl](https://user-images.githubusercontent.com/79030095/166406937-db2a3e14-96c5-411f-b8c4-0576734cdec9.mp4)
 
   Sample 2: Common Sandpiper (comsan) <br>
-  https://user-images.githubusercontent.com/79030095/166407081-878e459c-53bb-4e97-8d01-4bac4f083b21.mp4
+  [Common Sandpiper](https://user-images.githubusercontent.com/79030095/166407081-878e459c-53bb-4e97-8d01-4bac4f083b21.mp4)
   
   Sample 3: House Sparrow (houspa) <br>
   https://user-images.githubusercontent.com/79030095/166407763-baeee4cd-a31c-4a2b-9b7a-e467cd25fb94.mp4
