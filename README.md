@@ -73,24 +73,24 @@ The logic behind this approach is that a convolutional neural network will be ab
 
 ### Take a listen to some of our audio samples:
   Sample 1: Barn Owl (brnowl) 
-https://user-images.githubusercontent.com/79030095/166406937-db2a3e14-96c5-411f-b8c4-0576734cdec9.mp4
+  https://user-images.githubusercontent.com/79030095/166406937-db2a3e14-96c5-411f-b8c4-0576734cdec9.mp4
 
   Sample 2: Common Sandpiper (comsan)
-https://user-images.githubusercontent.com/79030095/166407081-878e459c-53bb-4e97-8d01-4bac4f083b21.mp4
+  https://user-images.githubusercontent.com/79030095/166407081-878e459c-53bb-4e97-8d01-4bac4f083b21.mp4
   
   Sample 3: House Sparrow (houspa)
-https://user-images.githubusercontent.com/79030095/166407763-baeee4cd-a31c-4a2b-9b7a-e467cd25fb94.mp4
+  https://user-images.githubusercontent.com/79030095/166407763-baeee4cd-a31c-4a2b-9b7a-e467cd25fb94.mp4
 
   Sample 4: Mallard (mallar3) 
-https://user-images.githubusercontent.com/79030095/166407879-3e1ac9f7-058e-4ef3-a63a-95eab020b59e.mp4
+  https://user-images.githubusercontent.com/79030095/166407879-3e1ac9f7-058e-4ef3-a63a-95eab020b59e.mp4
 
 
   Sample 5: Northern Cardinal (norcar)
-https://user-images.githubusercontent.com/79030095/166408082-45026486-4dbc-4798-841e-8fc5212195d9.mp4
+  https://user-images.githubusercontent.com/79030095/166408082-45026486-4dbc-4798-841e-8fc5212195d9.mp4
 
 
   Sample 6: Eurasian Skylark (skylar)
-https://user-images.githubusercontent.com/79030095/166408184-81721b65-9de2-47ab-ade2-3af4d382f1d8.mp4
+  https://user-images.githubusercontent.com/79030095/166408184-81721b65-9de2-47ab-ade2-3af4d382f1d8.mp4
 
 
 ### Preprocessing the data
