@@ -79,18 +79,18 @@ The logic behind this approach is that a convolutional neural network will be ab
   [Common Sandpiper](https://user-images.githubusercontent.com/79030095/166407081-878e459c-53bb-4e97-8d01-4bac4f083b21.mp4)
   
   Sample 3: House Sparrow (houspa) <br>
-  https://user-images.githubusercontent.com/79030095/166407763-baeee4cd-a31c-4a2b-9b7a-e467cd25fb94.mp4
+  [House Sparrow](https://user-images.githubusercontent.com/79030095/166407763-baeee4cd-a31c-4a2b-9b7a-e467cd25fb94.mp4)
 
   Sample 4: Mallard (mallar3) <br>
-  https://user-images.githubusercontent.com/79030095/166407879-3e1ac9f7-058e-4ef3-a63a-95eab020b59e.mp4
+  [Mallard](https://user-images.githubusercontent.com/79030095/166407879-3e1ac9f7-058e-4ef3-a63a-95eab020b59e.mp4)
 
 
   Sample 5: Northern Cardinal (norcar) <br>
-  https://user-images.githubusercontent.com/79030095/166408082-45026486-4dbc-4798-841e-8fc5212195d9.mp4
+  [Northern Cardinal](https://user-images.githubusercontent.com/79030095/166408082-45026486-4dbc-4798-841e-8fc5212195d9.mp4)
 
 
   Sample 6: Eurasian Skylark (skylar) <br>
-  https://user-images.githubusercontent.com/79030095/166408184-81721b65-9de2-47ab-ade2-3af4d382f1d8.mp4
+  [Eurasian Skylark](https://user-images.githubusercontent.com/79030095/166408184-81721b65-9de2-47ab-ade2-3af4d382f1d8.mp4)
 
 
 ### Preprocessing the data
