@@ -69,7 +69,10 @@ The logic behind this approach is that a convolutional neural network will be ab
 ### Preprocessing the data
 We first downloaded the training/test data from the BirdCLEF competition here: https://www.kaggle.com/competitions/birdclef-2022/data. This dataset provides audio files along with various categorical information (such as track_id, bird names, species, scientific name, etc) from over 150 different bird calls in csv format. For this neural network, only the sound files and bird names were utilized.
 
- <img width="1310" alt="Screen Shot 2022-05-03 at 1 23 08 AM" src="https://user-images.githubusercontent.com/36307766/166341805-7fda6a86-61f4-4b02-8d3d-22c0d7cb4995.png">
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/36307766/166341805-7fda6a86-61f4-4b02-8d3d-22c0d7cb4995.png"
+<p>
+  
 
 The CSV file was then uploaded to a dataframe in our journal, allowing us to restructure the data. To simplify this project for our deadlines, we decided to only use sound files from the birds with the most sound files. The following 6 birds were used in classification (Each bird with 500 audiofiles)
   1. Barn Owl (brnowl) 
@@ -80,9 +83,10 @@ The CSV file was then uploaded to a dataframe in our journal, allowing us to res
   6. Eurasian Skylark (skylar)
   
 The audio files from these birds were separated from the original dataframe and placed in a separate python dataframe
-<img width="1119" alt="Screen Shot 2022-05-03 at 1 24 02 AM" src="https://user-images.githubusercontent.com/36307766/166341867-d4305732-686e-41f8-8da4-f98d0532ffd0.png">
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/36307766/166341867-d4305732-686e-41f8-8da4-f98d0532ffd0.png"
+<p>
  
 Utilizing the librosa python package, we then converted each audio file into a mel-spectrogram
 
@@ -132,8 +136,9 @@ Fig.7 - Novel Convolutional Neural Network
 </p>
 
 At a batch size of 128 at 10 epochs, this model gave a surprisingly high accuracy. To further increase our accuracy, we decided to use MobileNetV2, a pretrained image classification model provided by Keras, to extract features from our mel-spectrogram. 
-  <img width="610" alt="Screen Shot 2022-05-03 at 1 32 23 AM" src="https://user-images.githubusercontent.com/36307766/166342462-7f59d778-048f-4796-a37e-be3f531d112c.png">
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/36307766/166342462-7f59d778-048f-4796-a37e-be3f531d112c.png"
+<p>
   
 We then used these extracted features as inputs to a Vanilla Neural Network. With this method, we were able to achieve an accuracy of ~90% on testing data:
 
