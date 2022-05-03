@@ -170,3 +170,4 @@ https://towardsdatascience.com/sound-based-bird-classification-965d0ecacb2b <br>
 https://www.kaggle.com/competitions/birdclef-2022/data <br>
 https://pnsn.org/spectrograms/what-is-a-spectrogram <br>
 https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
+https://github.com/jeffprosise/Deep-Learning/blob/master/Audio%20Classification%20(CNN).ipynb
