@@ -22,7 +22,7 @@ If successful, you'll help advance the science of bioacoustics and support ongoi
 4. [Conclusion and Future Plans](#conclusion-and-future-plans)
 
 ### Approach
-Our approach involves restrucutring the audio (.ogg) files into mel-spectrograms and feeding these spectrograms into a convolutional Neural Network. <b> Two appraoches were taken in the development of this model:
+Our approach involves restructuring the audio (.ogg) files into mel-spectrograms and feeding these spectrograms into a convolutional Neural Network. <b> Two appraoches were taken in the development of this model:
  1. Passing the Mel-Spectrograms into a Tensorflow Conv2d network
  2. Transfer learning using MobileNetV2 Neural Network to extract important features from Mel-Spectrograms and then passing those features through a vanilla-Neural Network for classification (Accuracy on Testing Data = 89.18)
 
